@@ -1,27 +1,12 @@
-// $(document).ready(function(){
-//   $("#langButton").click(function(event) {
-//
-//     if ($().val()==="armadillo lizard"){
-//       $(".armadillo").show();
-//     }
-//     else if($("#animal").val()==="Red Panda"){
-//       $(".redpanda").show();
-//     }
-//     else if($("#animal").val()==="Black Panther"){
-//       $(".blackpanther").show();
-//     }
-//
-//     event.preventDefault();
-//   });
-// });
 $(document).ready(function() {
-  $("#langButton").click(function(event) {
+  $("#formOne").submit(function(event) {
     event.preventDefault()
-    var hero = parseInt($("#hero")).val();
-    var shoe = parseInt($("#shoe")).val();
-    var food = parseInt($("#food")).val();
-    var colour = parseInt($("#colour")).val();
-    var animal = parseInt($("#animal")).val();
+    $("#langs").hide()
+    var hero = parseInt($("#hero").val());
+    var shoe = parseInt($("#shoe").val());
+    var food = parseInt($("#food").val());
+    var colour = parseInt($("#colour").val());
+    var animal = parseInt($("#animal").val());
 
     var score = food + shoe + hero + colour + animal ;
 
@@ -35,17 +20,19 @@ $(document).ready(function() {
       $(".python").hide();
       $(".Rust").hide();
 
-    }else if (score >=7 && score <13){
+    } else if (score >=7 && score <13){
       $("#ruby").hide();
       $(".python").show();
       $(".Rust").hide();
 
-    }else if (score >=13 && score <20){
+    } else if (score >=13 && score <20){
       $("#ruby").hide();
       $(".python").hide();
       $(".Rust").show();
 
-    }
+    };
+    console.log(score)
 
+    console.log(score)
   });
 });
