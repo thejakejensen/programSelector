@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault()
@@ -16,17 +17,17 @@ $(document).ready(function() {
       $(".Rust").hide();
 
     } else if (score >=5 && score <7){
-      $("#ruby").show();
+      $(".ruby").show();
       $(".python").hide();
       $(".Rust").hide();
 
     } else if (score >=7 && score <13){
-      $("#ruby").hide();
+      $(".ruby").hide();
       $(".python").show();
       $(".Rust").hide();
 
     } else if (score >=13 && score <20){
-      $("#ruby").hide();
+      $(".ruby").hide();
       $(".python").hide();
       $(".Rust").show();
 
