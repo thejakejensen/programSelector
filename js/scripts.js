@@ -14,19 +14,18 @@
 //     event.preventDefault();
 //   });
 // });
-$(document).ready(function(){
+$(document).ready(function() {
   $("#langButton").click(function(event) {
+    event.preventDefault()
+    var hero = parseInt($("#hero")).val();
+    var shoe = parseInt($("#shoe")).val();
+    var food = parseInt($("#food")).val();
+    var colour = parseInt($("#colour")).val();
+    var animal = parseInt($("#animal")).val();
 
-    if ($("#animal").val()==="armadillo lizard"){
-      $(".armadillo").show();
-    }
-    else if($("#animal").val()==="Red Panda"){
-      $(".redpanda").show();
-    }
-    else if($("#animal").val()==="Black Panther"){
-      $(".blackpanther").show();
-    }
+    var score = food + shoe + hero + colour + animal ;
 
-    event.preventDefault();
+    if (
+  
   });
 });
