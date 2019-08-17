@@ -8,7 +8,7 @@ $(document).ready(function() {
     var colour = parseInt($("#colour").val());
     var animal = parseInt($("#animal").val());
 
-    var score = function()}
+    var score = function(){
     return food + shoe + hero + colour + animal ;
 
     if (score > 5) {
@@ -32,6 +32,6 @@ $(document).ready(function() {
       $("#Rust").show();
 
     };
-
+  };
   });
 });
